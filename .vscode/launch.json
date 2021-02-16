@@ -2,13 +2,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "al",
+            "name": "localhost",
             "request": "launch",
-            "name": "Microsoft cloud sandbox",
+            "type": "al",
+            "environmentType": "OnPrem",
+            "server": "http://localhost",
+            "serverInstance": "BC170",
+            "authentication": "UserPassword",
             "breakOnError": true,
-            "tenant": "cft122.onmicrosoft.com",
-            "startupObjectType": "Page",
-            "startupObjectId": 50190
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "default"
         }
     ]
 }
